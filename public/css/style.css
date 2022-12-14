@@ -88,14 +88,19 @@ body {
 
 .movie-container {
   width: 100%;
-  height: 200px;
+  height: 250px;
   align-items: center;
-  /* overflow-x: auto;
-  overflow-y: hidden; */
+  overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  display: flex;
 }
 
 .movie-category::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -107,7 +112,6 @@ body {
   margin-right: 10px;
   cursor: pointer;
   position: relative;
-  border: 1px solid red;
 }
 
 .movie img {
