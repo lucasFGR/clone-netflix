@@ -2,6 +2,7 @@ fetch(
   genres_list_http +
     new URLSearchParams({
       api_key: api_key,
+      language: "pt-BR",
     })
 )
   .then((res) => res.json())
@@ -16,6 +17,7 @@ const fetchMoviesListByGenres = (id, genres) => {
     movie_genres_http +
       new URLSearchParams({
         api_key: api_key,
+        language: "pt-BR",
         with_genres: id,
         page: Math.floor(Math.random() * 3) + 1,
       })
@@ -34,7 +36,7 @@ const makeCategoryElment = (category, data) => {
       <img src="./img/prev.png" alt="previous button" />
     </button>
 
-    <h1 class="movie-category">${category.replace("_", " ")}</h1>
+    <h1 class="movie-category">${category.replace("_movies", " ")}</h1>
 
     <div class="movie-container" id="${category}">
      
