@@ -33,7 +33,7 @@ const main = document.querySelector(".main");
 const makeCategoryElment = (category, data) => {
   main.innerHTML += `<div class="movie-list">
     <button class="pre-btn">
-      <img src="./img/prev.png" alt="previous button" />
+      <img src="public/img/prev.png" alt="previous button" />
     </button>
 
     <h1 class="movie-category">${category.replace("_movies", " ")}</h1>
@@ -42,7 +42,7 @@ const makeCategoryElment = (category, data) => {
      
     </div>
     <button class="next-btn">
-      <img src="./img/next.png" alt="next button" />
+      <img src="public/img/next.png" alt="next button" />
     </button>
   </div>`;
 
